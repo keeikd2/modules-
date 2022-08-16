@@ -69,7 +69,7 @@ class NumMod(loader.Module):
 						else:
 							await message.reply('что за хуета?')
 							break
-			await asyncio.sleep(3)
+			await asyncio.sleep(5)
 				
 		if not count_st:
 			await message.edit('Не найдено ни одного совпадения в начале строк с аргументами.')
@@ -107,7 +107,7 @@ class NumMod(loader.Module):
 					await message.reply('что за хуета?')
 			except:
 				await message.reply("заразить " + reply.raw_text[json["entities"][i]["offset"]:json["entities"][i]["offset"]+json["entities"][i]["length"]] )
-			await asyncio.sleep(3)
+			await asyncio.sleep(5)
 		await message.delete() 
 		
 	async def exnumcmd(self, message):
@@ -265,5 +265,5 @@ class NumMod(loader.Module):
 			mes = ''.join(send_mes.values())
 			await message.respond(mes)
 		else:
-			send_mes = re.search(r"лечись|вакцин[ау]|купи[ть]{,2} вакцину", text)
+			send_mes = re.search(r"лечись|вак|вакцин[ау]|купи[ть]{,2} вакцину", text)
 			if send_mes: await message.respond('.купить вакцину')
