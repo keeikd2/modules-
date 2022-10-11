@@ -218,7 +218,7 @@ class RPMod(loader.Module):
 		for x in args:
 			if x in emoji.EMOJI_DATA.keys(): lst.append(x)
 			if x not in emoji.EMOJI_DATA.keys(): nick+=x
-		for word in getLines():
+		for word in getLines(filename):
                     if word in emoji.EMOJI_DATA:
                          new_line_list.append(emoji.demojize(word))
 		if len(lst) > 3:
