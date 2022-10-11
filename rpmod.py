@@ -216,9 +216,9 @@ class RPMod(loader.Module):
 		lst = []
 		nick = ''
 		for x in args:
-			if word in emoji.UNICODE_EMOJI:
-                                 new_line_list.append(emoji.demojize(word))
-			if x not in emoji.UNICODE_EMOJI['en'].keys(): nick+=x
+			for word in line_list:
+  emojis = emoji.distinct_emoji_list(word)
+  new_line_list.extend([emoji.demojize(is_emoji) for is_emoji in emojis])
 		if len(lst) > 3:
 			await utils.answer(message, f"Ник пользователя <b>{str(user.id)}</b> изменён на '<b>{args}</b>'")
 		elif len(lst) + len(nick) >= 45:
