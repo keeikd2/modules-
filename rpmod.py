@@ -216,8 +216,8 @@ class RPMod(loader.Module):
 		lst = []
 		nick = ''
 		for x in args:
-			if x in emoji.EMOJI_DATA[].keys(): lst.append(x)
-			if x not in emoji.EMOJI_DATA[].keys(): nick+=x
+			if x in emoji.EMOJI_DATA.keys(): lst.append(x)
+			if x not in emoji.EMOJI_DATA.keys(): nick+=x
 		for word in line_list: 
                     if word in emoji.EMOJI_DATA:
                          new_line_list.append(emoji.demojize(word))
