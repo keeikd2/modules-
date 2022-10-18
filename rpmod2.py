@@ -242,7 +242,6 @@ class RPMod(loader.Module):
 			return await utils.answer(message, f"Ник пользователя <b>{str(user.id)}</b> изменён на '<b>{user.first_name}</b>'")
 		lst = []
 		nick = ''
-		for x in args:
 		if len(lst) > 3:
 			await utils.answer(message, f"Ник пользователя <b>{str(user.id)}</b> изменён на '<b>{args}</b>'")
 		elif len(lst) + len(nick) >= 100:
