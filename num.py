@@ -265,5 +265,5 @@ class NumMod(loader.Module):
 			mes = ''.join(send_mes.values())
 			await message.respond(mes)
 		else:
-			send_mes = re.search(r"лечись|вак|вакцин[ау]|купи[ть]{,2} вакцину", text)
+			send_mes = re.search(r"лечись|хи|вак|вакцин[ау]|купи[ть]{,2} вакцину", text)
 			if send_mes: await message.respond('.купить вакцину')
