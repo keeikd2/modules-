@@ -1,37 +1,21 @@
 from .. import loader, utils  # noqa
-
 import asyncio
-
 import contextlib
-
 import pytz
-
 import re
-
 re._MAXCACHE = 3000
-
 import telethon
-
 from telethon.tl.types import MessageEntityTextUrl, Message
-
 from telethon.tl.functions.users import GetFullUserRequest
-
 import json as JSON
-
 from telethon.errors.rpcerrorlist import FloodWaitError
-
 from datetime import datetime, date, time
-
 import logging
-
 import types
-
 from ..inline.types import InlineCall
 
 import random
-
 import subprocess
-
 import string, pickle
 
 def validate_text(text: str):
