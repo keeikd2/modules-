@@ -50,8 +50,8 @@ class BioMod(loader.Module):
 
     """
 
-    strings = {
-        "name": "Bio",
+    strings = 
+        "name": "id",
 
         
 
