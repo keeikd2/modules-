@@ -24,27 +24,17 @@ def validate_text(text: str):
     return txt
 
 @loader.tds
-
 class BioMod(loader.Module):
-
     """
-
 💘
-
     """
-
     strings = {
-        "name": "id",
-
         
-
+        "name": "id",
+        
         "not_reply": "<emoji document_id=5215273032553078755>💔</emoji> Реплая нет.",
 
-        
-
-        "not_args": "<emoji document_id=5215273032553078755>💔</emoji> Аргументов нет.",
-
-        
+        "not_args": "<emoji document_id=5215273032553078755>💔</emoji> Аргументов нет.",        
 
         "nolink": "<emoji document_id=5197248832928227386>💔</emoji> Нет ссылки.",
 
@@ -52,9 +42,7 @@ class BioMod(loader.Module):
               "aicmd":
 
             "<b>🥷🏻</b> <a href='tg://openmessage?user_id={}'>{}</a>\n"
-
             "<b>🆔:</b> <code>@{}</code>",
-
         "myid": "<b>My 🆔:</b> <code>@{}</code>",
       async def айcmd(self, message):
         }
