@@ -59,9 +59,9 @@ class BioMod(loader.Module):
 Получает айди пользователя.
         """
           )
-    reply = await message.get_reply_message()
-        args = utils.get_args(message)
-        if not reply:
+            reply = await message.get_reply_message()
+                args = utils.get_args(message)
+            if not reply:
 
             if not args:
                 user = await message.client.get_entity(message.sender_id)
