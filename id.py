@@ -19,7 +19,6 @@ import subprocess
 import string, pickle
 
 def validate_text(text: str):
-
     txt = text.replace("<u>", "").replace("</u>", "").replace("<i>", "").replace("</i>", "").replace("<b>", "").replace("</b>", "").replace("<s>", "").replace("</s>", "").replace("<tg-spoiler>", "").replace("</tg-spoiler><s>", "")
 
     return txt
