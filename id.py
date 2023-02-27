@@ -45,6 +45,14 @@ class BioMod(loader.Module):
         "myid": "<b>My 🆔:</b> <code>@{}</code>",
         
         }
+    async def client_ready(self, client, db):
+        self.db = db
+        self.client = client #IDS
+        if not self.db.get("NumMod", "exUsers", False):
+            self.db.set("NumMod", "exUsers", [])
+        if not self.db.get("NumMod", "infList", False):
+            self.db.set("NumMod", "infList", {})
+            
       async def айcmd(self, message):
         """
 [reply/arg]
