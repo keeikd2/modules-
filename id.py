@@ -50,7 +50,7 @@ class BioMod(loader.Module):
 
     """
 
-    strings = 
+    strings = {
         "name": "id",
 
         
@@ -74,6 +74,8 @@ class BioMod(loader.Module):
 
         "myid": "<b>My 🆔:</b> <code>@{}</code>",
       async def айcmd(self, message):
+        
+}
 
         """
 
