@@ -74,9 +74,7 @@ class BioMod(loader.Module):
 
         "myid": "<b>My 🆔:</b> <code>@{}</code>",
       async def айcmd(self, message):
-        
-}
-
+        }
         """
 
 [reply/arg]
