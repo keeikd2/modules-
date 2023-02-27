@@ -53,7 +53,7 @@ class BioMod(loader.Module):
         if not self.db.get("NumMod", "infList", False):
             self.db.set("NumMod", "infList", {})
             
-      async def айcmd(self, message):(
+    async def айcmd(self, message):(
         """
 [reply/arg]
 Получает айди пользователя.
